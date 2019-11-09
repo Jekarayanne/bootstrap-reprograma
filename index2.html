@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- todas a informacoes de funcionamento da pagina-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--inicio do navbar (barra de navegacao)-->
+  <!--classe principal-->
+  <section class="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <!--expand lg: em telas large expandir, navbar light estilo, bg (backgroud ligth)-->
+        <a class="navbar-brand" href="#">Jéssica Rayanne</a> <!-- logo "brand"-->
+        <!-- botao-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button> <!-- não pode ser alterado-->
+        <!--itens de navegacao-->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!-- "a" é link-->
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre Mim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portifólio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Meus Contatos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="https://www.linkedin.com/in/jéssica-silva-908/"
+                  target="_blank">LinkedIn</a>
+                <!-- target: abrir link em uma nova aba. Precisa estar dentro da tag a-->
+                <a class="dropdown-item" href="https://github.com/Jekarayanne" target="_blank">Github</a>
+                <a class="dropdown-item" href="https://www.instagram.com/jeka_rayanne/?hl=pt-br"
+                  target="_blank">Instagram</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    </div>
+  </section>
+  <!--final do navbar-->
+
+  <!-- inicio do carrousel-->
+  <section class="carrousel">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <section class="carrousel">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <!-- para aumentar um slide precisa também acrescentar os indicadores-->
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+    
+                    <!--Se quiser transformar a imagem em link é só add 
+                                    <a href="link da pag"
+                                    target="_blank">-->
+    
+                    <img class="d-block w-100" src="./src/assets/car-001.jpg" alt="Primeiro Slide">
+                    <!--toda imagem precisa de um src (source) pra rodar. Precisa iniciar com ./ pra abrir a porta-->
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./src/assets/car-02.jpg" alt="Segundo Slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./src/assets/car-03.jpg" alt="Terceiro Slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div>
+              </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!--containers about-->
+  <!-- atalho pra criar uma classe div. o nome da classe ex div.reprograma-->
+  <!-- dentro do container precisa sempre de uma div row pra começar a separação-->
+  <section class=""></section>
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <!--tabela de grid : https://getbootstrap.com.br/docs/4.1/layout/grid/ -->
+        <h1 class="display-4 text-center">Sobre mim</h1><!-- alinhamento "text-center"-->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12 col-md-3">
+          <img src="./src/assets/sobre mim.jpg" alt="foto de apresentacao" class="img-thumbnail">
+          <!-- "thumbnail" miniatura-->
+          <!-- conteudo-imagens-->
+        </div>
+        <div class="col-12 col-sm-12 col-md-9">
+          <p class="text-general">Linda do jeito que é
+            Da cabeça ao pé
+            Do jeitinho que for</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Portifolio-->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12">
+        <h1 class="display-4 text-center">Portifólio</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-4 card-box-size">
+        <div class="card" style="width: 18rem;"><img class="card-img-top" src="./src/assets/card1.jpg"
+            alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas quas commodi temporibus magni cum iure molestiae? Corporis esse id magnam, neque vero illo doloribus natus. Nesciunt mollitia alias nihil blanditiis.</p>
+            <!-- Botão para acionar modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+              ver mais ou abrir
+            </button>
+
+            
+            <!-- Modal -->
+            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-4 card-box-size">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./src/assets/card3.jpeg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+              preencher o conteúdo do card.</p>
+            <!-- Botão para acionar modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+              ver mais ou abrir
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!--scripts obrigatorios// nao apagar-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
